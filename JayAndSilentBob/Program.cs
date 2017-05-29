@@ -37,11 +37,10 @@ namespace JayAndSilentBob
                 }
             }
 
-            Random r = new Random();
 
             for (int i = 0; i < count; i++)
             {
-                numbertron.GenerateNumber(r);
+                numbertron.GenerateNumber();
             }
 
             if (jay.Score < silentBob.Score) Console.WriteLine("Победил Джей!");

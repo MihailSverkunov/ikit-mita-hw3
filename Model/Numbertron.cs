@@ -10,8 +10,9 @@ namespace Model
     {
         public delegate void NewNumberDelegate(int i);
         public event NewNumberDelegate NewNumber;
+        Random r = new Random();
 
-        public void GenerateNumber(Random r)
+        public void GenerateNumber()
         {
             NewNumber(r.Next(0, 99));
         }
