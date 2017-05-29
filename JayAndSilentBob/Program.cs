@@ -15,8 +15,8 @@ namespace JayAndSilentBob
             SilentBob silentBob = new SilentBob();
             Numbertron numbertron = new Numbertron();
 
-            numbertron.NewNumber += new Numbertron.NewNumberDelegate(jay.FetchNewNuber);
-            numbertron.NewNumber += new Numbertron.NewNumberDelegate(silentBob.FetchNewNuber);
+            numbertron.NewNumber += jay.FetchNewNuber;
+            numbertron.NewNumber += silentBob.FetchNewNuber;
 
             int count = 0;
             while(count < 1)
